@@ -23,7 +23,7 @@
       }
 
       h2 {
-        color: #008000;
+        color: #ffffff;
       }
 
       .button {
@@ -43,6 +43,8 @@
 
       .text {
         width: 30%;
+        font-size: 0.9em;
+        color: white;
       }
 
       .title {
@@ -61,12 +63,19 @@
         display: flex;
         justify-content: space-around;
         flex-direction: row-reverse;
+        background-color: #4e9895;
+      }
+
+      #controls {
+        display: flex;
+        justify-content: space-around;
         background-color: #135b09;
       }
 
       #soluzioni-finali {
         display: flex;
         justify-content: space-around;
+        flex-direction: row-reverse;
         background-color: #0e016d;
       }
     </style>
@@ -79,16 +88,36 @@
 
       <div id="introduction">
         <div class="text">
-          <h2>Introduction</h2>
-          <p>Write your introduction here.</p>
+          <h2>Introduzione</h2>
+          <p>
+            Benvenuti su Final Option, un gioco sul tema della non violenza, con
+            livelli di ogni genere e soluzioni inaspettate. Vi preghiamo di
+            leggere le istruzioni e buona partita!.
+          </p>
         </div>
         <img src="https://i.imgur.com/nQ6oOJJ.png" width="455" height="208" />
       </div>
 
       <div id="how-to-play">
         <div class="text">
-          <h2>How to Play</h2>
-          <p>Write the instructions on how to play the game here.</p>
+          <h2>Come giocare</h2>
+          <p>
+            Scendete in fondo alla pagina e cliccate il bottone per iniziare. Vi
+            verrà mostrata una pagina come in foto a sinistra; prendete questo
+            codice <b>109.115.96.214</b> e incollatelo dove vi è scritto
+            <b>Endpoint IP</b>.
+          </p>
+        </div>
+        <img src="https://i.imgur.com/7rXakY7.png" width="455" height="208" />
+      </div>
+
+      <div id="controls">
+        <div class="text">
+          <h2>Controlli</h2>
+          <p>
+            Usate <b>A</b> e <b>D</b> per muovervi, <b>E</b> per interagire con
+            la mappa, e se serve un aiuto tenete premuto <b>Q</b>.
+          </p>
         </div>
         <img src="https://i.imgur.com/oQX5nzV.png" width="455" height="208" />
       </div>
@@ -96,20 +125,23 @@
       <div id="soluzioni-finali">
         <div class="text">
           <h2>Soluzioni Finali</h2>
-          <p>Write the final solutions or strategies here.</p>
+          <p>
+            La soluzione di ogni livello è divisa in tre scelte: due cattive e
+            una buona. Giocando capirai quali sono le migliori e quali le
+            peggiori. Qui troverai le spiegazioni di ogni soluzione:
+            <a
+              href="https://github.com/SGTMM/Final-Option/blob/a5d49f0ed71d457db7cba1fb084305ca61d427ef/Spiegazione%20soluzioni"
+              >Clicca qui</a
+            >
+            .
+          </p>
         </div>
         <img src="https://i.imgur.com/WpMQyeQ.png" width="455" height="208" />
       </div>
 
-      <a class="button" href=" https://easy-friends-brake.loca.lt"
-        >Click to Play</a
+      <a class="button" href="https://easy-friends-brake.loca.lt"
+        >Clicca per giocare</a
       >
     </div>
-    <script>
-      var xhr = new XMLHttpRequest();
-      xhr.open("GET", " https://easy-friends-brake.loca.lt", true);
-      xhr.setRequestHeader("Bypass-Tunnel-Reminder", "your-custom-value");
-      xhr.send();
-    </script>
   </body>
 </html>
