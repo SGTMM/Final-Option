@@ -1,13 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Il mio gioco</title>
+    <title>Final Option</title>
+    <style>
+      body {
+        background-color: #efefef;
+        color: #333333;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+      }
+
+      h1 {
+        color: #ff0000;
+      }
+
+      h2 {
+        color: #008000;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ff0000;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      .button:hover {
+        background-color: #cc0000;
+      }
+
+      .text {
+        width: 30%;
+      }
+
+      .title {
+        display: flex;
+        justify-content: center;
+      }
+
+      /* Different background colors for each section */
+      #introduction {
+        display: flex;
+        justify-content: space-around;
+        background-color: #aa0000;
+      }
+
+      #how-to-play {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        background-color: #135b09;
+      }
+
+      #soluzioni-finali {
+        display: flex;
+        justify-content: space-around;
+        background-color: #0e016d;
+      }
+    </style>
   </head>
   <body>
-    <a href="https://forty-wolves-think.loca.lt/">Howdy</a>
+    <div class="container">
+      <div class="title">
+        <h1>Final Option</h1>
+      </div>
+
+      <div id="introduction">
+        <div class="text">
+          <h2>Introduction</h2>
+          <p>Write your introduction here.</p>
+        </div>
+        <img src="https://i.imgur.com/nQ6oOJJ.png" width="455" height="208" />
+      </div>
+
+      <div id="how-to-play">
+        <div class="text">
+          <h2>How to Play</h2>
+          <p>Write the instructions on how to play the game here.</p>
+        </div>
+        <img src="https://i.imgur.com/oQX5nzV.png" width="455" height="208" />
+      </div>
+
+      <div id="soluzioni-finali">
+        <div class="text">
+          <h2>Soluzioni Finali</h2>
+          <p>Write the final solutions or strategies here.</p>
+        </div>
+        <img src="https://i.imgur.com/WpMQyeQ.png" width="455" height="208" />
+      </div>
+
+      <a class="button" href="https://forty-wolves-think.loca.lt/"
+        >Click to Play</a
+      >
+    </div>
     <script>
       var xhr = new XMLHttpRequest();
       xhr.open("GET", "https://forty-wolves-think.loca.lt/", true);
