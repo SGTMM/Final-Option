@@ -4,8 +4,8 @@
     <title>Final Option</title>
     <style>
       body {
-        background-color: #efefef;
-        color: #333333;
+        background-color: #1e2127;
+        color: #fff;
         font-family: Arial, sans-serif;
       }
 
@@ -78,70 +78,162 @@
         flex-direction: row-reverse;
         background-color: #0e016d;
       }
+      .menu {
+        text-align: center;
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .menu h1 {
+        font-size: 48px;
+        color: #fff;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+      }
+
+      .menu ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 30px 0;
+      }
+
+      .menu li {
+        display: inline-block;
+        margin: 0 20px;
+      }
+
+      .menu li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 24px;
+        transition: color 0.3s ease;
+      }
+
+      .menu li a:hover {
+        color: #00ff00;
+      }
+
+      .box_2 {
+        display: none;
+      }
+
+      .content {
+        display: flex;
+        justify-content: space-evenly;
+      }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="title">
-        <h1>Final Option</h1>
-      </div>
-
-      <div id="introduction">
-        <div class="text">
-          <h2>Introduzione</h2>
-          <p>
-            Benvenuti su Final Option, un gioco sul tema della non violenza, con
-            livelli di ogni genere e soluzioni inaspettate. Vi preghiamo di
-            leggere le istruzioni e buona partita!.
-          </p>
+    <div class="box_1">
+      <div class="container">
+        <div class="title">
+          <h1>Final Option</h1>
         </div>
-        <img src="https://i.imgur.com/nQ6oOJJ.png" width="455" height="208" />
-      </div>
 
-      <div id="how-to-play">
-        <div class="text">
-          <h2>Come giocare</h2>
-          <p>
-            Scendete in fondo alla pagina e cliccate il bottone per iniziare. Vi
-            verrà mostrata una pagina come in foto a sinistra; prendete questo
-            codice <b>109.115.96.214</b> e incollatelo dove vi è scritto
-            <b>Endpoint IP</b>.
-          </p>
+        <div id="introduction">
+          <div class="text">
+            <h2>Introduzione</h2>
+            <p>
+              Benvenuti su Final Option, un gioco sul tema della non violenza,
+              con livelli di ogni genere e soluzioni inaspettate. Vi preghiamo
+              di leggere le istruzioni e buona partita!.
+            </p>
+          </div>
+          <img src="https://i.imgur.com/nQ6oOJJ.png" width="455" height="208" />
         </div>
-        <img src="https://i.imgur.com/7rXakY7.png" width="455" height="208" />
-      </div>
 
-      <div id="controls">
-        <div class="text">
-          <h2>Controlli</h2>
-          <p>
-            Usate <b>A</b> e <b>D</b> per muovervi, <b>E</b> per interagire con
-            la mappa, e se serve un aiuto tenete premuto <b>Q</b>.
-          </p>
+        <div id="how-to-play">
+          <div class="text">
+            <h2>Come giocare</h2>
+            <p>
+              Scendete in fondo alla pagina e cliccate il bottone per iniziare.
+              Vi verrà mostrata una pagina come in foto a sinistra; prendete
+              questo codice <b>109.115.96.214</b> e incollatelo dove vi è
+              scritto <b>Endpoint IP</b>.
+            </p>
+          </div>
+          <img src="https://i.imgur.com/7rXakY7.png" width="455" height="208" />
         </div>
-        <img src="https://i.imgur.com/oQX5nzV.png" width="455" height="208" />
-      </div>
 
-      <div id="soluzioni-finali">
-        <div class="text">
-          <h2>Soluzioni Finali</h2>
-          <p>
-            La soluzione di ogni livello è divisa in tre scelte: due cattive e
-            una buona. Giocando capirai quali sono le migliori e quali le
-            peggiori. Qui troverai le spiegazioni di ogni soluzione:
-            <a
-              href="https://github.com/SGTMM/Final-Option/blob/a5d49f0ed71d457db7cba1fb084305ca61d427ef/Spiegazione%20soluzioni"
-              >Clicca qui</a
-            >
-            .
-          </p>
+        <div id="controls">
+          <div class="text">
+            <h2>Controlli</h2>
+            <p>
+              Usate <b>A</b> e <b>D</b> per muovervi, <b>E</b> per interagire
+              con la mappa, e se serve un aiuto tenete premuto <b>Q</b>.
+            </p>
+          </div>
+          <img src="https://i.imgur.com/oQX5nzV.png" width="455" height="208" />
         </div>
-        <img src="https://i.imgur.com/WpMQyeQ.png" width="455" height="208" />
-      </div>
 
-      <a class="button" href="https://easy-friends-brake.loca.lt"
-        >Clicca per giocare</a
-      >
+        <div id="soluzioni-finali">
+          <div class="text">
+            <h2>Soluzioni Finali</h2>
+            <p>
+              La soluzione di ogni livello è divisa in tre scelte: due cattive e
+              una buona. Giocando capirai quali sono le migliori e quali le
+              peggiori. Qui troverai le spiegazioni di ogni soluzione:
+              <a
+                href="https://github.com/SGTMM/Final-Option/blob/a5d49f0ed71d457db7cba1fb084305ca61d427ef/Spiegazione%20soluzioni"
+                >Clicca qui</a
+              >
+              .
+            </p>
+          </div>
+          <img src="https://i.imgur.com/WpMQyeQ.png" width="455" height="208" />
+        </div>
+
+        <a class="button" href="#" onclick="change()">Clicca per giocare</a>
+      </div>
     </div>
+    <div class="box_2">
+      <div class="menu">
+        <h1>Final Option</h1>
+        <div class="content">
+          <div class="image_1">
+            <img
+              src="https://i.imgur.com/3sy3w1H.png"
+              width="55"
+              height="269"
+            />
+          </div>
+          <div class="text">
+            <ul>
+              <li>
+                <a href="https://petite-rocks-chew.loca.lt/" onclick="start()"
+                  >Start</a
+                >
+              </li>
+              <li>
+                <a onclick="change_2()">Options</a>
+              </li>
+              <li><a href="#">Quit</a></li>
+            </ul>
+          </div>
+          <div class="image_2">
+            <img
+              src="https://i.imgur.com/yAryONv.png"
+              width="51"
+              height="269"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function change() {
+        var div = document.getElementsByClassName("box_1")[0];
+        var div_2 = document.getElementsByClassName("box_2")[0];
+        div.style.display = "none";
+        div_2.style.display = "block";
+      }
+
+      function change_2() {
+        var div = document.getElementsByClassName("box_1")[0];
+        var div_2 = document.getElementsByClassName("box_2")[0];
+        div.style.display = "block";
+        div_2.style.display = "none";
+      }
+    </script>
   </body>
 </html>
